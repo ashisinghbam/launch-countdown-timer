@@ -12,11 +12,6 @@ html {
   cursor: default;
 }
 
-/* - White: hsl(0, 0%, 100%) //font color
-- Dark desaturated blue: hsl(236, 21%, 26%) //mountain
-- Very dark blue: hsl(235, 16%, 14%) //background
-- Very dark (mostly black) blue: hsl(234, 17%, 12%) //mountain shadow */
-
 .timer-container {
   background-color: hsl(235, 16%, 14%);
   background-image: url(./images/bg-stars.svg);
@@ -37,20 +32,17 @@ h2 {
 }
 
 .timer-box {
-  /* background-color: pink; */
+
   display: flex;
 }
 
 .box-container {
-  /* background-color: skyblue; */
+
   margin: 2rem;
   padding: 1rem;
   text-align: center;
   border-radius: 10px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+
 }
 
 .box-item::before {
@@ -70,7 +62,6 @@ h2 {
 }
 
 .box-item {
-  /* background-color: hsl(237, 18%, 59%); */
   color: hsl(345, 95%, 68%);
   padding: 1.5rem 0rem;
   width: 8rem;
@@ -78,6 +69,11 @@ h2 {
   border-radius: 10px;
   position: relative;
   z-index: 4;
+}
+
+span {
+    position: relative;
+    z-index: 10rem;
 }
 
 .box-item::after {
@@ -128,7 +124,80 @@ p {
     cursor: pointer;
 }
 
+@media (max-width: 900px) {
+    .box-container {
+        padding: 0;
+        margin: 2rem 1rem;
+    }
+    .social-media {
+        left: 40vw;
+    }
+    
+}
 
+@media (max-width: 650px) {
+    .box-container {
+        margin: 2rem 0.5rem;
+    }
+    .box-item {
+        /* background-color: pink; */
+        width: 5rem;
+        font-size: 2.5rem;
+    }
+    .box-item::before{
+        height: 3.15rem;
+    }
+
+    .box-item::after {
+        height: 3.15rem;
+    }
+
+    h2 {
+        text-align: center;
+        /* font-size: 1.4rem; */
+    }
+
+    .hills-image {
+        background-image: url(./images/pattern-hills.svg);
+        height: 11rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hills-image img {
+        display: none;
+    }
+
+    .social-media {
+        left: 27vw;
+    }
+
+    p{
+        letter-spacing: 0.1rem;
+    }
+    .social-media {
+        left: 30vw;
+    }
+    
+}
+
+@media (max-width: 390px) {
+    .box-container {
+        zoom: 80%;
+    }
+    .social-media {
+        left: 23vw;
+    }
+}
+
+@media (max-width: 300px) {
+    .box-container {
+        zoom: 60%;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}
 
 
 
