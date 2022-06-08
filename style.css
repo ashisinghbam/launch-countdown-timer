@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  cursor: default;
+}
+
+/* - White: hsl(0, 0%, 100%) //font color
+- Dark desaturated blue: hsl(236, 21%, 26%) //mountain
+- Very dark blue: hsl(235, 16%, 14%) //background
+- Very dark (mostly black) blue: hsl(234, 17%, 12%) //mountain shadow */
+
+.timer-container {
+  background-color: hsl(235, 16%, 14%);
+  background-image: url(./images/bg-stars.svg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  font-family: 'Red Hat Text';
+  height: 100vh;
+  position: relative;
+}
+
+h2 {
+  letter-spacing: 0.4rem;
+  font-size: 1.4rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.timer-box {
+  /* background-color: pink; */
+  display: flex;
+}
+
+.box-container {
+  /* background-color: skyblue; */
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.box-item::before {
+  content: ' ';
+  top: 0rem;
+  left: 0rem;
+  border-radius: inherit;
+  font-size: 1rem;
+  position: absolute;
+  background-color: hsl(237, 18%, 59%);
+
+  opacity: 0.4;
+  height: 4.45rem;
+  width: inherit;
+  z-index: 3;
+
+}
+
+.box-item {
+  /* background-color: hsl(237, 18%, 59%); */
+  color: hsl(345, 95%, 68%);
+  padding: 1.5rem 0rem;
+  width: 8rem;
+  font-size: 4.5rem;
+  border-radius: 10px;
+  position: relative;
+  z-index: 4;
+}
+
+.box-item::after {
+  content: ' ';
+  bottom: 0rem;
+  left: 0rem;
+  border-radius: inherit;
+  font-size: 1rem;
+  position: absolute;
+  background-color: hsl(237, 18%, 59%);
+  opacity: 0.3;
+  height: 4.5rem;
+  width: inherit;
+  z-index: 2;
+
+}
+
+p {
+    color: hsl(237, 18%, 59%);
+  letter-spacing: 0.3rem;
+  font-size: 0.7rem;
+  z-index: 5;
+}
+
+.hills-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.hills-image img {
+  width: 100%;
+}
+
+.social-media {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 45vw;
+}
+
+.social-media li {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
